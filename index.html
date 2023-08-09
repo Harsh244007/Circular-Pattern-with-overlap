@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{
+    background-color:#224080;
+    display:grid;
+    height:100vh;
+    place-items:center;
+    align-items:center;
+  }
+  .grid-container {
+    display: grid;
+    width: max-content;
+    position: relative;
+    place-items: center;
+    grid-template-columns: repeat(2, 110px);
+    gap: 0px;
+  }
+
+  .circle {
+    width: 110px;
+    height: 110px;
+    background-color: #5d91cb;
+    border-radius: 50%;
+  }
+
+  .rectangle {
+    width: 150px;
+    height: 150px;
+    background-color:#224080;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+  }
+
+  .small-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #f3b65b;
+    border-radius: 50%;
+  }
+</style>
+<title>Circle Grid</title>
+</head>
+<body>
+<div class="grid-container">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="rectangle">
+    <div class="small-circle"></div>
+  </div>
+</div>
+</body>
+</html>
